@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <FactionDef>
+	    <defName>Togrutaoutlander</defName>
+	    <label>Togruta Outpost</label>
+        <description>Mysterious Togruta Race</description>
+        <pawnSingular>togruta</pawnSingular>
+        <pawnsPlural>togrutas</pawnsPlural>
+        <settlementGenerationWeight>1</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <canMakeRandomly>true</canMakeRandomly>
+        <canSiege>true</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <expandingIconTexture>World/Expanding/TogrutaFactionBase</expandingIconTexture>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<techLevel>Spacer</techLevel>
+	    <backstoryCategories>
+            <li>Togruta_Backstory</li>
+        </backstoryCategories>
+		<geneticVariance>0.8</geneticVariance>
+        <goodwillDailyGain>0.25</goodwillDailyGain>
+        <goodwillDailyFall>0.25</goodwillDailyFall>
+        <leaderTitle>prime councilor</leaderTitle>
+		<hairTags>
+			<li>Rural</li>
+		    <li>TGtogrutahair</li>
+		</hairTags>
+        <caravanTraderKinds>
+            <li>Caravan_Togruta_BulkGoods</li>
+            <li>Caravan_Togruta_CombatSupplier</li>
+            <li>Caravan_Togruta_PirateMerchant</li>
+            <li>Caravan_Togruta_Exotic</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+            <li>Visitor_Togruta_Standard</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>Base_Togruta_Standard</li>
+        </baseTraderKinds>
+        <allowedArrivalTemperatureRange>
+            <min>-100</min>
+            <max>28</max>
+        </allowedArrivalTemperatureRange>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0,35)</li>
+                <li>(70, 50)</li>
+                <li>(700, 100)</li>
+                <li>(1300, 150)</li>
+                <li>(100000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+            <li>
+                <!-- Normal fights, standard mix -->
+                <kindDef>Combat</kindDef>
+                <options>
+					<Togruta_Villager>5</Togruta_Villager>
+                    <Togruta_Town_Guard>10</Togruta_Town_Guard>
+                    <Togruta_Town_Councilman>10</Togruta_Town_Councilman>
+                </options>
+            </li>
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <Togruta_Villager>20</Togruta_Villager>
+                    <Togruta_Town_Guard>10</Togruta_Town_Guard>
+                    <Togruta_Town_Councilman>10</Togruta_Town_Councilman>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <Togruta_Town_Trader>1</Togruta_Town_Trader>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2</Alpaca>
+                    <Elephant>1</Elephant>
+                </carriers>
+                <guards>
+                    <Togruta_Villager>3</Togruta_Villager>
+                    <Togruta_Town_Guard>10</Togruta_Town_Guard>
+				</guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+				    <Togruta_Villager>10</Togruta_Villager>
+                    <Togruta_Town_Guard>10</Togruta_Town_Guard>
+                    <Togruta_Town_Councilman>10</Togruta_Town_Councilman>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <homeIconPath>World/DefaultFactionBase</homeIconPath>
+    </FactionDef>
+
+</Defs>    

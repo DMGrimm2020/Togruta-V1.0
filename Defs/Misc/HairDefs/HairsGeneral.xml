@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HairDef>
+        <defName>TG3HeadTailsF</defName>
+        <label>Female Head Tails</label>
+        <hairGender>Female</hairGender>
+        <texPath>Things/Togruta/Hairs/TG3HeadTailsF</texPath>
+		<hairTags>
+		    <li>TGtogrutahair</li>
+		</hairTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>TG3HeadTailsM</defName>
+        <label>Male Head Tails</label>
+        <hairGender>Male</hairGender>
+        <texPath>Things/Togruta/Hairs/TG3HeadTailsM</texPath>
+		<hairTags>
+		    <li>TGtogrutahair</li>
+		</hairTags>
+    </HairDef>
+
+</Defs>

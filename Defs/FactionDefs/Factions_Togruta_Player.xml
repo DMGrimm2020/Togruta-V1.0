@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<FactionDef>
+        <defName>TogrutaPlayerColony</defName>
+        <label>Togruta Arrivals</label>
+        <description>Togruta Outpost Start</description>
+        <isPlayer>true</isPlayer>
+        <basicMemberKind>Togruta</basicMemberKind>
+        <pawnSingular>colonist</pawnSingular>
+        <pawnsPlural>colonists</pawnsPlural>
+        <techLevel>Spacer</techLevel>
+	    <backstoryCategories>
+            <li>Togruta_Backstory</li>
+        </backstoryCategories>
+		<homeIconPath>World/DefaultFactionBase</homeIconPath>
+        <expandingIconTexture>World/Expanding/TogrutaFactionBase</expandingIconTexture>
+        <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+	    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+        <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <geneticVariance>1</geneticVariance>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<hairTags>
+		    <li>TGtogrutahair</li>
+		</hairTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+			</thingDefs>
+		</apparelStuffFilter>
+    </FactionDef>
+
+</Defs>
+  
