@@ -615,6 +615,10 @@
             </graphicPaths>
             <hairSettings>
                 <hasHair>true</hasHair>
+                <getsGreyAt>61</getsGreyAt>
+                <hairTags>
+		            <li>TGtogrutahair</li>
+		        </hairTags>
             </hairSettings>       
 	        <thoughtSettings>
                 <cannotReceiveThoughts>
