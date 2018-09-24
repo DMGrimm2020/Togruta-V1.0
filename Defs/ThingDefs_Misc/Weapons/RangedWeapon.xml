@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="BaseWeaponNeolithic">
+        <defName>TGLongBow</defName>
+        <label>long bow</label>
+        <description>A powerful long bow. Fires a heavy arrow long distances.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/TGLongBow</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Bow_Large</soundInteract>
+        <costList>
+            <WoodLog>50</WoodLog>
+        </costList>
+        <statBases>
+            <MarketValue>120</MarketValue>
+            <WorkToMake>9000</WorkToMake>
+            <Mass>2</Mass>
+            <AccuracyTouch>0.65</AccuracyTouch>
+            <AccuracyShort>0.85</AccuracyShort>
+            <AccuracyMedium>0.75</AccuracyMedium>
+            <AccuracyLong>0.50</AccuracyLong>
+            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponTags>
+            <li>NeolithicRangedHeavy</li>
+            <li>NeolithicRangedChief</li>
+            <li>TGLongBow</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>TGBlueSmallArrow</defaultProjectile>
+                <warmupTime>2.0</warmupTime>
+                <range>29.9</range>
+                <soundCast>Bow_Large</soundCast>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>limb</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <recipeMaker>
+            <researchPrerequisite>Greatbow</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseWeaponNeolithic">
+        <defName>TGLongBowWithFeather</defName>
+        <label>long bow with feather</label>
+        <description>A powerful long bowwith feather. Fires a heavy arrow long distances.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/TGLongBowWithFeather</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Bow_Large</soundInteract>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costList>
+            <TGLongBow>1</TGLongBow>
+        </costList>
+        <statBases>
+            <MarketValue>150</MarketValue>
+            <WorkToMake>4500</WorkToMake>
+            <Mass>2.2</Mass>
+            <AccuracyTouch>0.65</AccuracyTouch>
+            <AccuracyShort>0.9</AccuracyShort>
+            <AccuracyMedium>0.75</AccuracyMedium>
+            <AccuracyLong>0.60</AccuracyLong>
+            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponTags>
+            <li>NeolithicRangedHeavy</li>
+            <li>NeolithicRangedChief</li>
+            <li>TGLongBowWithFeather</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>TGBlueSmallArrow</defaultProjectile>
+                <warmupTime>2.0</warmupTime>
+                <range>29.9</range>
+                <soundCast>Bow_Large</soundCast>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>limb</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <recipeMaker>
+            <researchPrerequisite>Greatbow</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseProjectileNeolithic">
+        <defName>TGBlueSmallArrow</defName>
+        <label>blue small arrow</label>
+        <graphicData>
+            <texPath>Things/Item/Projectile/TGBlueSmallArrow</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <flyOverhead>false</flyOverhead>
+            <damageDef>Arrow</damageDef>
+            <damageAmountBase>17</damageAmountBase>
+            <stoppingPower>1.5</stoppingPower>
+            <armorPenetrationBase>0.15</armorPenetrationBase>
+            <speed>49</speed>
+        </projectile>
+    </ThingDef>
+  
+</Defs>
+
+
