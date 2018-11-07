@@ -50,6 +50,9 @@
             </li>
         </tools>
         <recipeMaker>
+            <recipeUsers>
+                <li>CraftingSpot</li>
+            </recipeUsers>
             <researchPrerequisite>Greatbow</researchPrerequisite>
             <skillRequirements>
                 <Crafting>6</Crafting>
@@ -111,6 +114,9 @@
             </li>
         </tools>
         <recipeMaker>
+            <recipeUsers>
+                <li>CraftingSpot</li>
+            </recipeUsers>
             <researchPrerequisite>Greatbow</researchPrerequisite>
             <skillRequirements>
                 <Crafting>6</Crafting>
@@ -134,7 +140,7 @@
             <speed>49</speed>
         </projectile>
     </ThingDef>
-  
+    
 </Defs>
 
 

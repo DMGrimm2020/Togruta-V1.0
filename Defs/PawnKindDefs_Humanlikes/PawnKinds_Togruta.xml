@@ -12,6 +12,7 @@
     </backstoryCategories>
     <invNutrition>2.55</invNutrition>
     <apparelTags>
+      <li>Citizen</li>
       <li>IndustrialBasic</li>
       <li>IndustrialAdvanced</li>
     </apparelTags>
@@ -186,7 +187,7 @@
     <itemQuality>Excellent</itemQuality>
     <weaponMoney>
       <min>200</min>
-      <max>200</max>
+      <max>1000</max>
     </weaponMoney>
     <weaponTags>
       <li>Gun</li>

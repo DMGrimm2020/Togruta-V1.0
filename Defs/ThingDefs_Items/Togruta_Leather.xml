@@ -11,7 +11,6 @@
         <statBases>
             <MarketValue>4.2</MarketValue>
             <StuffPower_Armor_Sharp>0.24</StuffPower_Armor_Sharp>
-            <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
             <StuffPower_Insulation_Heat>30</StuffPower_Insulation_Heat>
         </statBases>
         <stuffProps>

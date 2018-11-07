@@ -1,5 +1,94 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs> 
+<Defs>  
+  
+    <ThingDef ParentName="BaseMeleeWeapon">
+        <defName>TGGaffiStick</defName>
+		<label>gaffi stick</label>
+		<description>gaffi stick</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/TGGaffiStick</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+        <techLevel>Medieval</techLevel>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costList>
+            <WoodLog>5</WoodLog>
+            <Steel>15</Steel>
+        </costList>
+		<statBases>
+            <MarketValue>60</MarketValue>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>5</Mass>
+			<MaxHitPoints>200</MaxHitPoints>
+		</statBases>
+		<equippedStatOffsets>
+			<ConstructionSpeed>0.1</ConstructionSpeed>
+			<HuntingStealth>0.1</HuntingStealth>
+			<PlantWorkSpeed>0.05</PlantWorkSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+        <recipeMaker>
+            <recipeUsers>
+                <li>CraftingSpot</li>
+            </recipeUsers>
+        </recipeMaker>
+        <weaponTags>
+            <li>TGTGGaffiStick</li>
+            <li>MedievalMeleeAdvanced</li>
+            <li>MedievalShieldValidSidearm</li>
+        </weaponTags>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>20</power>
+                <armorPenetration>0.50</armorPenetration>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>head</label>
+                <labelUsedInLogging>false</labelUsedInLogging>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>15</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>15</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_Art">
+                <nameMaker>NamerArtWeaponMelee</nameMaker>
+                <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+                <minQualityForArtistic>Excellent</minQualityForArtistic>
+            </li>
+        </comps>
+	</ThingDef>
   
     <ThingDef ParentName="BaseMeleeWeapon">
         <defName>TGStickStaff</defName>
