@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>Togruta</name>
-	<author>Tgrimm92</author>
-	<targetVersion>0.19.2009</targetVersion>
-		<url>https://github.com/tgrimabc</url>
+	<author>TGrimm92</author>
+  	<supportedVersions>
+    	<li>1.0</li>
+  	</supportedVersions>
+	<url>https://github.com/tgrimabc</url>
 	<description>Togruta were sentient species and were charaterized by their skin tones, large montrals and head tails. Togruta were sometimes mistake for Twileks.
 	
 	ComfyTemperature (0,30)
